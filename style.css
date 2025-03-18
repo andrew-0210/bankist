@@ -109,3 +109,12 @@
 ::-webkit-scrollbar {
   display: none;
 }
+
+.time {
+  text-align: right;
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  color: red;
+  font-style: italic;
+  font-weight: 600
+}

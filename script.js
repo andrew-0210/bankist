@@ -42,3 +42,36 @@ const marqueeText = document.querySelector('.marquee-text');
 
 const marText = `Claim your Offer Today! `;
 marqueeText.textContent = marText.repeat(8);
+
+// const changingText = document.querySelector('.changing-text');
+
+// let intervalId = setInterval(() => {
+//   const minutes = new Date().getMinutes();
+//   const seconds = new Date().getSeconds();
+//   let hours = new Date().getHours();
+//   let ampm = hours <= 12 ? 'AM' : 'PM';
+//   hours = hours % 12 || 12;
+//   changingText.textContent = `The time is : ${hours}:${minutes}:${seconds}${ampm}`;
+// }, 1000);
+
+const changingText = document.querySelector('.time');
+
+const updateTime = () => {
+  const now = new Date();
+  let hours = now.getHours();
+  let minutes = now.getMinutes().toString().padStart(2, '0');
+  let seconds = now.getSeconds().toString().padStart(2, '0');
+  let ampm = hours < 12 ? 'AM' : 'PM';
+
+  hours = hours % 12 || 12;
+
+  (hours < 9 && ampm === 'AM') || (hours > 5 && ampm === 'PM')
+    ? (changingText.textContent = `The bank is closed`)
+    : (changingText.textContent = `The time is: ${hours}:${minutes}:${seconds} ${ampm}`);
+};
+
+// Initial call to prevent 1-second delay
+updateTime();
+
+// Update every second
+const intervalId = setInterval(updateTime, 1000);
