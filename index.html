@@ -7,24 +7,18 @@
     <title>Bankist</title>
   </head>
   <body>
-    <div class="nav">
-      <h1>BANKIST</h1>
-      <div class="nav-input">
-        <input type="text" placeholder="Enter username" />
-        <input type="text" placeholder="Enter password" />
-        <button type="submit">Submit</button>
+    <div class="outer-container">
+      <div class="nav-container">
+        <h1>BANKIST</h1>
+        <form action="">
+          <input type="text" class="input-user" placeholder="Enter username">
+          <input type="text" class="input-pin" placeholder="Enter PIN">
+          <button type="submit">&rarr;</button>
+        </form>
       </div>
+
+      <div class="main">Hello World</div>
     </div>
-    <div class="movement-container"></div>
-    <div class="summary-container">
-      <p class="label_display--deposit label_display"></p>
-      <p class="label_display--withdrawal label_display"></p>
-      <p class="label_display--interest label_display"></p>
-    </div>
-    <div class="marquee-banner">
-      <p class="marquee-text"></p>
-    </div>
-    <p class="time"></p>
     <script src="script.js"></script>
   </body>
 </html>
