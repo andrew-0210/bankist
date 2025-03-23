@@ -1,0 +1,13 @@
+{
+	"prettier.singleAttributePerLine": true,
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"reactSnippets.settings.prettierEnabled": true,
+	"prettier.bracketSameLine": true,
+	"prettier.htmlWhitespaceSensitivity": "strict",
+	"prettier.trailingComma": "all",
+	"prettier.useTabs": true,
+	"prettier.withNodeModules": true,
+	"prettier.vueIndentScriptAndStyle": true,
+	"editor.formatOnSave": true,
+	"editor.formatOnPaste": true
+}
