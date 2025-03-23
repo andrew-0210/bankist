@@ -172,6 +172,7 @@ btnSort.addEventListener("click", (e) => {
 	sorted = !sorted;
 });
 
+//Implementing Transfers
 btnTransfer.addEventListener("click", (e) => {
 	e.preventDefault();
 
